@@ -36,7 +36,7 @@
 	border: 1px solid #000;
 }
 
-/* #loading-overlay {
+#loading-overlay {
 	display: none;
 	position: fixed;
     top: 0;
@@ -53,4 +53,4 @@
     justify-content: center;
     margin: 0;
     height: 100%;
-} */
+}
