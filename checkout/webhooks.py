@@ -30,6 +30,8 @@ def webhook(request):
     except stripe.error.SignatureVerificationError as e:
         # Invalid signature
         return HttpResponse(status=400)
+    except Exception as e:
+        return HttpResponse(content=e, status=400)  # Any other exception
 
     # Set up a webhook handler
     handler = StripeWH_Handler(request)
