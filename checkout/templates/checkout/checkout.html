@@ -109,6 +109,8 @@
 							<div class="mb-3" id="card-element"></div>
 							<!-- Used to display form errors. -->
 							<div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                            <!-- Pass the stripe client_secret along so the payment intent id can be added to the order -->
+                            <input type="hidden" value="{{ client_secret }}" name="client_secret">
 						</div>
 					</fieldset>
 
