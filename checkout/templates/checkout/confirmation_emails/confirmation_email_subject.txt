@@ -1,1 +1,1 @@
-Boutique Ado confirmation of order number {{ order.order_number }}
+Boutique Ado confirmation for order number {{ order.order_number }}
