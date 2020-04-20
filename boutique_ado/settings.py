@@ -200,7 +200,6 @@ if 'USE_AWS' in os.environ:
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     STATICFILES_LOCATION = 'static'
     MEDIAFILES_LOCATION = 'media'
-    MEDIA_URL = 'media/'
 
 
 # Payments
