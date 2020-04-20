@@ -196,10 +196,10 @@ if 'USE_AWS' in os.environ:
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
     # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     STATICFILES_LOCATION = 'static'
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     MEDIAFILES_LOCATION = 'media'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 
 # Payments
