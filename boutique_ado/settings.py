@@ -175,7 +175,6 @@ USE_TZ = True
 
 # Always use these settings for static/media
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
@@ -198,11 +197,9 @@ if 'USE_AWS' in os.environ:
 
     # Static and media files
     STATICFILES_LOCATION = 'static'
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     MEDIAFILES_LOCATION = 'media'
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    STATIC_URL = AWS_S3_CUSTOM_DOMAIN + STATIC_URL
-    MEDIA_URL = AWS_S3_CUSTOM_DOMAIN + MEDIA_URL
 
 
 # Payments
