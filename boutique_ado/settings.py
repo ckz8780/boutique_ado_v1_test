@@ -201,8 +201,8 @@ if 'USE_AWS' in os.environ:
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     MEDIAFILES_LOCATION = 'media'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    STATIC_URL = AWS_S3_CUSTOM_DOMAIN + STATIC_ROOT
-    MEDIA_URL = AWS_S3_CUSTOM_DOMAIN + MEDIA_ROOT
+    STATIC_URL = AWS_S3_CUSTOM_DOMAIN + STATIC_URL
+    MEDIA_URL = AWS_S3_CUSTOM_DOMAIN + MEDIA_URL
 
 
 # Payments
