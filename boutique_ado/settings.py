@@ -73,6 +73,7 @@ EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.environ.get('EMAL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAL_HOST_PASS')
+DEFAULT_FROM_EMAIL = os.environ.get('EMAL_HOST_USER')
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -220,4 +221,5 @@ STRIPE_CURRENCY = 'usd'
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET_test', '')
-DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+# DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
+
